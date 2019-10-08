@@ -3,11 +3,11 @@ function addNumber(array, number) {
 
     for (let e of array) {
         if (Number.isInteger(e) && e.toString().length === 1)
-            sum += e.toString();
+            sum += e;
         else return null;
     }
 
-    sum = (parseInt(sum) + number).toString();
+    sum = (parseInt(sum, 10) + number).toString();
 
     return sum.split('').map(Number);
 }

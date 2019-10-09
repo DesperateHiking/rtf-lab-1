@@ -1,13 +1,6 @@
 function addNumber(array, number) {
-    let sum = '';
-
-    for (let e of array) {
-        if (Number.isInteger(e) && e.toString().length === 1)
-            sum += e;
-        else return null;
-    }
-
-    sum = (parseInt(sum, 10) + number).toString();
+    const isNumArray = array.every(item => Number.isInteger(item));
+    let sum = (parseInt(array.join(''), 10) + number).toString();
 
     return sum.split('').map(Number);
 }

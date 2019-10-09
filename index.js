@@ -1,8 +1,7 @@
 function addNumber(array, number) {
-    const isNumArray = array.every(item => Number.isInteger(item));
-    let sum = (parseInt(array.join(''), 10) + number).toString();
-
-    return sum.split('').map(Number);
+    if (array.every(item => Number.isInteger(item)))
+        return (parseInt(array.join(''), 10) + number).toString().split('').map(Number);
+    return null;
 }
 
 module.exports = {

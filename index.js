@@ -3,7 +3,7 @@ function addNumber(array, number) {
         return null;
     return (parseInt(array.join(''), 10) + number).toString().split('').map(Number);
 }
-
+//
 module.exports = {
     addNumber
 };

@@ -4,8 +4,8 @@ module.exports = {
         indent: ['error', 4],
         'padding-line-between-statements': [
             'error',
-            { blankLine: 'always', prev: '*', next: 'return' },
-            { blankLine: 'always', prev: ['if', 'for', 'while', 'switch'], next: '*' },
+            {blankLine: 'always', prev: '*', next: 'return'},
+            {blankLine: 'always', prev: ['if', 'for', 'while', 'switch'], next: '*'},
         ],
         camelcase: ['error'],
         'linebreak-style': 'off',
